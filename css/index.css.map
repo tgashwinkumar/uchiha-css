@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA;EACE,gCAAgC;EAChC,WAAW;AACb;;AAEA;EACE,mBAAmB;AACrB;;AAFA;EACE,mBAAmB;AACrB;;AAFA;EACE,mBAAmB;AACrB","file":"index.css","sourcesContent":["body {\n  font: 100% Helvetica, sans-serif;\n  color: #333;\n}\n\n:fullscreen #main p {\n  background: #3880ff;\n}\n"]}
