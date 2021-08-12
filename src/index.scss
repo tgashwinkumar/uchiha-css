@@ -3,3 +3,21 @@
         background: #3880ff;
     }
 }
+
+.btn{
+    width: 100px;
+    height: 72px;
+    font-size: 24px;
+
+    &.btn-dark-red{
+        border: crimson 1px solid;
+        background: rgb(197, 50, 50);      
+        color: black;  
+    }
+
+    &.btn-dark-blue {
+        border: rgb(63, 20, 220) 1px solid;
+        background: rgb(77, 50, 197);
+        color: rgb(77, 77, 77);
+    }
+}
