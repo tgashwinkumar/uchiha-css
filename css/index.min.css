@@ -1,1 +1,1 @@
-:-webkit-full-screen #main p{background:#3880ff}:-ms-fullscreen #main p{background:#3880ff}:fullscreen #main p{background:#3880ff}.btn{width:100px;height:72px;font-size:24px}.btn.btn-dark-red{border:#dc143c 1px solid;background:#c53232;color:#000}.btn.btn-dark-blue{border:#3f14dc 1px solid;background:#4d32c5;color:#4d4d4d}
+#main{background:#212121;width:100vw;height:100vh;overflow-x:hidden;overflow-y:auto}#main.bg-ocean{background:#102a43}#main.bg-clouds{background:#1f2933}

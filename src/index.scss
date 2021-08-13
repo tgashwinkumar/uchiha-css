@@ -1,23 +1,17 @@
-:fullscreen #main {
-    p {
-        background: #3880ff;
-    }
-}
+@import './Colors/_colors.scss';
 
-.btn{
-    width: 100px;
-    height: 72px;
-    font-size: 24px;
-
-    &.btn-dark-red{
-        border: crimson 1px solid;
-        background: rgb(197, 50, 50);      
-        color: black;  
+#main {
+    background: $bg-dark-grey-900;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    &.bg-ocean{
+        background: $bg-blue-grey-900;
     }
 
-    &.btn-dark-blue {
-        border: rgb(63, 20, 220) 1px solid;
-        background: rgb(77, 50, 197);
-        color: rgb(77, 77, 77);
+    &.bg-clouds{
+        background: $bg-cool-grey-900;
     }
 }

@@ -1,31 +1,17 @@
-:-webkit-full-screen #main p {
-  background: #3880ff;
+#main {
+  background: #212121;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-:-ms-fullscreen #main p {
-  background: #3880ff;
+#main.bg-ocean {
+  background: #102A43;
 }
 
-:fullscreen #main p {
-  background: #3880ff;
-}
-
-.btn {
-  width: 100px;
-  height: 72px;
-  font-size: 24px;
-}
-
-.btn.btn-dark-red {
-  border: crimson 1px solid;
-  background: #c53232;
-  color: black;
-}
-
-.btn.btn-dark-blue {
-  border: #3f14dc 1px solid;
-  background: #4d32c5;
-  color: #4d4d4d;
+#main.bg-clouds {
+  background: #1f2933;
 }
 
 /*# sourceMappingURL=index.css.map */
