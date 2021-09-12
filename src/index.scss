@@ -1,17 +1,1 @@
 @import './Colors/_colors.scss';
-
-#main {
-    background: $bg-dark-grey-900;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    
-    &.bg-ocean{
-        background: $bg-blue-grey-900;
-    }
-
-    &.bg-clouds{
-        background: $bg-cool-grey-900;
-    }
-}

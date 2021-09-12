@@ -1,0 +1,119 @@
+@import "./colorCodes.scss";
+
+@each $color, $code in $pink-colors {
+  .text-#{$color} {
+    color: #{$code};
+  }
+}
+
+@each $color, $code in $red-colors {
+  .text-#{$color} {
+    color: #{$code};
+  }
+}
+
+@each $color, $code in $light-red-colors {
+  .text-#{$color}{
+      color: #{$code};
+  }
+}
+
+@each $color, $code in $orange-colors {
+  .text-#{$color} {
+    color: #{$code};
+  }
+}
+
+@each $color, $code in $amber-colors {
+  .text-#{$color}{
+      color: #{$code};
+  }
+}
+
+@each $color, $code in $yellow-colors {
+  .text-#{$color}{
+      color: #{$code};
+  }
+}
+
+@each $color, $code in $lime-colors {
+  .text-#{$color} {
+    color: #{$code};
+  }
+}
+
+@each $color, $code in $green-colors {
+  .text-#{$color} {
+    color: #{$code};
+  }
+}
+
+@each $color, $code in $light-green-colors {
+  .text-#{$color}{
+      color: #{$code};
+  }
+}
+
+@each $color, $code in $cyan-colors {
+  .text-#{$color} {
+    color: #{$code};
+  }
+}
+
+@each $color, $code in $blue-colors {
+  .text-#{$color}{
+      color: #{$code};
+  }
+}
+
+@each $color, $code in $indigo-colors {
+  .text-#{$color}{
+      color: #{$code};
+  }
+}
+
+@each $color, $code in $light-blue-colors {
+  .text-#{$color} {
+    color: #{$code};
+  }
+}
+
+@each $color, $code in $teal-colors {
+  .text-#{$color} {
+    color: #{$code};
+  }
+}
+
+@each $color, $code in $purple-colors {
+  .text-#{$color}{
+      color: #{$code};
+  }
+}
+
+@each $color, $code in $blue-grey-colors {
+  .text-#{$color} {
+    color: #{$code};
+  }
+}
+
+@each $color, $code in $brown-colors {
+  .text-#{$color}{
+      color: #{$code};
+  }
+}
+
+@each $color, $code in $grey-colors {
+  .text-#{$color}{
+      color: #{$code};
+  }
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-white {
+    color: $white;
+}
+
+
