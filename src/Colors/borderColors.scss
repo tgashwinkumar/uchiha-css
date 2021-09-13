@@ -1,0 +1,119 @@
+@import "./colorCodes.scss";
+
+@each $color, $code in $pink-colors {
+  .border-#{$color} {
+    border-color: #{$code};
+  }
+}
+
+@each $color, $code in $red-colors {
+  .border-#{$color} {
+    border-color: #{$code};
+  }
+}
+
+@each $color, $code in $light-red-colors {
+  .border-#{$color}{
+      border-color: #{$code};
+  }
+}
+
+@each $color, $code in $orange-colors {
+  .border-#{$color} {
+    border-color: #{$code};
+  }
+}
+
+@each $color, $code in $amber-colors {
+  .border-#{$color}{
+      border-color: #{$code};
+  }
+}
+
+@each $color, $code in $yellow-colors {
+  .border-#{$color}{
+      border-color: #{$code};
+  }
+}
+
+@each $color, $code in $lime-colors {
+  .border-#{$color} {
+    border-color: #{$code};
+  }
+}
+
+@each $color, $code in $green-colors {
+  .border-#{$color} {
+    border-color: #{$code};
+  }
+}
+
+@each $color, $code in $light-green-colors {
+  .border-#{$color}{
+      border-color: #{$code};
+  }
+}
+
+@each $color, $code in $cyan-colors {
+  .border-#{$color} {
+    border-color: #{$code};
+  }
+}
+
+@each $color, $code in $blue-colors {
+  .border-#{$color}{
+      border-color: #{$code};
+  }
+}
+
+@each $color, $code in $indigo-colors {
+  .border-#{$color}{
+      border-color: #{$code};
+  }
+}
+
+@each $color, $code in $light-blue-colors {
+  .border-#{$color} {
+    border-color: #{$code};
+  }
+}
+
+@each $color, $code in $teal-colors {
+  .border-#{$color} {
+    border-color: #{$code};
+  }
+}
+
+@each $color, $code in $purple-colors {
+  .border-#{$color}{
+      border-color: #{$code};
+  }
+}
+
+@each $color, $code in $blue-grey-colors {
+  .border-#{$color} {
+    border-color: #{$code};
+  }
+}
+
+@each $color, $code in $brown-colors {
+  .border-#{$color}{
+      border-color: #{$code};
+  }
+}
+
+@each $color, $code in $grey-colors {
+  .border-#{$color}{
+      border-color: #{$code};
+  }
+}
+
+.border-black {
+    border-color: $black;
+}
+
+.border-white {
+    border-color: $white;
+}
+
+

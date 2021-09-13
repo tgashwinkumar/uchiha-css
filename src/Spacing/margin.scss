@@ -1,0 +1,69 @@
+@import "./sizeCodes.scss";
+
+// Margins are a way to specify the space between elements. It is generated from a map of sizes, which are measured in "rem"
+
+@each $code, $size in $sizeByRem {
+  @each $media, $value in $mediaQueries {
+    @media (min-width: $value) {
+      .#{$media}m-#{$code} {
+        margin: #{$size};
+      }
+
+      .#{$media}-m-#{$code} {
+        margin: -#{$size};
+      }
+
+      .#{$media}mt-#{$code} {
+        margin-top: #{$size};
+      }
+
+      .#{$media}-mt-#{$code} {
+        margin-top: -#{$size};
+      }
+
+      .#{$media}mr-#{$code} {
+        margin-right: #{$size};
+      }
+
+      .#{$media}-mr-#{$code} {
+        margin-right: -#{$size};
+      }
+
+      .#{$media}mb-#{$code} {
+        margin-bottom: #{$size};
+      }
+
+      .#{$media}-mb-#{$code} {
+        margin-bottom: -#{$size};
+      }
+
+      .#{$media}ml-#{$code} {
+        margin-left: #{$size};
+      }
+
+      .#{$media}-ml-#{$code} {
+        margin-left: -#{$size};
+      }
+
+      .#{$media}mx-#{$code} {
+        margin-left: #{$size};
+        margin-right: #{$size};
+      }
+
+      .#{$media}-mx-#{$code} {
+        margin-left: -#{$size};
+        margin-right: -#{$size};
+      }
+
+      .#{$media}my-#{$code} {
+        margin-top: #{$size};
+        margin-bottom: #{$size};
+      }
+
+      .#{$media}-my-#{$code} {
+        margin-top: -#{$size};
+        margin-bottom: -#{$size};
+      }
+    }
+  }
+}

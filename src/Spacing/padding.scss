@@ -1,0 +1,69 @@
+@import "./sizeCodes.scss";
+
+// Paddings are a way to control the space between elements. Paddings are measured in units of "rem", generated from a map of sizes.
+
+@each $code, $size in $sizeByRem {
+  @each $media, $value in $mediaQueries {
+    @media (min-width: $value) {
+      .#{media}p-#{$code} {
+        padding: #{$size};
+      }
+
+      .#{media}-p-#{$code} {
+        padding: -#{$size};
+      }
+
+      .#{media}pt-#{$code} {
+        padding-top: #{$size};
+      }
+
+      .#{media}-pt-#{$code} {
+        padding-top: -#{$size};
+      }
+
+      .#{media}pr-#{$code} {
+        padding-right: #{$size};
+      }
+
+      .#{media}-pr-#{$code} {
+        padding-right: -#{$size};
+      }
+
+      .#{media}pb-#{$code} {
+        padding-bottom: #{$size};
+      }
+
+      .#{media}-pb-#{$code} {
+        padding-bottom: -#{$size};
+      }
+
+      .#{media}pl-#{$code} {
+        padding-left: #{$size};
+      }
+
+      .#{media}-pl-#{$code} {
+        padding-left: -#{$size};
+      }
+
+      .#{media}px-#{$code} {
+        padding-left: #{$size};
+        padding-right: #{$size};
+      }
+
+      .#{media}-px-#{$code} {
+        padding-left: -#{$size};
+        padding-right: -#{$size};
+      }
+
+      .#{media}py-#{$code} {
+        padding-top: #{$size};
+        padding-bottom: #{$size};
+      }
+
+      .#{media}-py-#{$code} {
+        padding-top: -#{$size};
+        padding-bottom: -#{$size};
+      }
+    }
+  }
+}
