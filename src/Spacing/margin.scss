@@ -1,10 +1,10 @@
-@import "./sizeCodes.scss";
+@import "../sizeCodes.scss";
 
 // Margins are a way to specify the space between elements. It is generated from a map of sizes, which are measured in "rem"
 
-@each $code, $size in $sizeByRem {
-  @each $media, $value in $mediaQueries {
-    @media (min-width: $value) {
+@each $media, $value in $mediaQueries {
+  @media (min-width: $value) {
+    @each $code, $size in $sizeByRem {
       .#{$media}m-#{$code} {
         margin: #{$size};
       }

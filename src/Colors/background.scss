@@ -1,119 +1,26 @@
-@import "./colorCodes.scss";
+@import "../colorCodes.scss";
+@import "../sizeCodes.scss";
 
-@each $color, $code in $pink-colors {
-  .bg-#{$color} {
-    background-color: #{$code};
+$colorLists: $pink-colors, $red-colors, $light-red-colors, $orange-colors,
+  $amber-colors, $yellow-colors, $lime-colors, $green-colors,
+  $light-green-colors, $teal-colors, $blue-colors, $light-blue-colors,
+  $cyan-colors, $purple-colors, $indigo-colors, $blue-grey-colors, $grey-colors;
+
+@each $media, $mediaValue in $mediaQueries {
+  @media (min-width: $mediaValue) {
+    @each $colorList in $colorLists {
+      @each $color, $code in $colorList {
+        .#{$media}bg-#{$color} {
+          background-color: #{$code};
+        }
+      }
+    }
+    .#{$media}bg-black {
+      background-color: $black;
+    }
+
+    .#{$media}bg-white {
+      background-color: $white;
+    }
   }
 }
-
-@each $color, $code in $red-colors {
-  .bg-#{$color} {
-    background-color: #{$code};
-  }
-}
-
-@each $color, $code in $light-red-colors {
-  .bg-#{$color}{
-      background-color: #{$code};
-  }
-}
-
-@each $color, $code in $orange-colors {
-  .bg-#{$color} {
-    background-color: #{$code};
-  }
-}
-
-@each $color, $code in $amber-colors {
-  .bg-#{$color}{
-      background-color: #{$code};
-  }
-}
-
-@each $color, $code in $yellow-colors {
-  .bg-#{$color}{
-      background-color: #{$code};
-  }
-}
-
-@each $color, $code in $lime-colors {
-  .bg-#{$color} {
-    background-color: #{$code};
-  }
-}
-
-@each $color, $code in $green-colors {
-  .bg-#{$color} {
-    background-color: #{$code};
-  }
-}
-
-@each $color, $code in $light-green-colors {
-  .bg-#{$color}{
-      background-color: #{$code};
-  }
-}
-
-@each $color, $code in $cyan-colors {
-  .bg-#{$color} {
-    background-color: #{$code};
-  }
-}
-
-@each $color, $code in $blue-colors {
-  .bg-#{$color}{
-      background-color: #{$code};
-  }
-}
-
-@each $color, $code in $indigo-colors {
-  .bg-#{$color}{
-      background-color: #{$code};
-  }
-}
-
-@each $color, $code in $light-blue-colors {
-  .bg-#{$color} {
-    background-color: #{$code};
-  }
-}
-
-@each $color, $code in $teal-colors {
-  .bg-#{$color} {
-    background-color: #{$code};
-  }
-}
-
-@each $color, $code in $purple-colors {
-  .bg-#{$color}{
-      background-color: #{$code};
-  }
-}
-
-@each $color, $code in $blue-grey-colors {
-  .bg-#{$color} {
-    background-color: #{$code};
-  }
-}
-
-@each $color, $code in $brown-colors {
-  .bg-#{$color}{
-      background-color: #{$code};
-  }
-}
-
-@each $color, $code in $grey-colors {
-  .bg-#{$color}{
-      background-color: #{$code};
-  }
-}
-
-.bg-black {
-    background-color: $black;
-}
-
-.bg-white {
-    background-color: $white;
-}
-
-

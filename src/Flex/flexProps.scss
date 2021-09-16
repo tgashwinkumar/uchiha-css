@@ -1,0 +1,108 @@
+@import '../sizeCodes.scss';
+
+@each $media, $mediaValue in $mediaQueries {
+    @media (min-width: $mediaValue) {
+        .#{$media}flex {
+            
+            display: flex;
+        }
+
+        .#{$media}flex-col {
+            flex-direction: column;
+        }
+
+        .#{$media}flex-row {
+            flex-direction: row;
+        }
+
+        .#{$media}flex-row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .#{$media}flex-col-reverse {
+            flex-direction: column-reverse;
+        }
+
+        .#{$media}flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .#{$media}flex-nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .#{$media}flex-wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        .#{$media}justify-start {
+            justify-content: flex-start;
+        }
+
+        .#{$media}justify-end {
+            justify-content: flex-end;
+        }
+
+        .#{$media}justify-center {
+            justify-content: center;
+        }
+
+        .#{$media}justify-between {
+            justify-content: space-between;
+        }
+
+        .#{$media}justify-around {
+            justify-content: space-around;
+        }
+
+        .#{$media}items-start {
+            align-items: flex-start;
+        }
+
+        .#{$media}items-end {
+            align-items: flex-end;
+        }
+
+        .#{$media}items-center {
+            align-items: center;
+        }
+
+        .#{$media}items-baseline {
+            align-items: baseline;
+        }
+
+        .#{$media}items-stretch {
+            align-items: stretch;
+        }
+
+        .#{$media}content-start {
+            align-content: flex-start;
+        }
+
+        .#{$media}content-end {
+            align-content: flex-end;
+        }
+
+        .#{$media}content-center {
+            align-content: center;
+        }
+
+        .#{$media}content-between {
+            align-content: space-between;
+        }
+
+        .#{$media}content-around {
+            align-content: space-around;
+        }   
+
+        .#{$media}content-stretch {
+            align-content: stretch;
+        }
+
+        .#{$media}content-evenly {
+            align-content: space-evenly;
+        }
+
+        
+    }
+}
